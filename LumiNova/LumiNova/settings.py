@@ -76,13 +76,24 @@ WSGI_APPLICATION = 'LumiNova.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.sqlite3',
+#        'NAME': BASE_DIR / 'db.sqlite3',
+#    }
+#}
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'URL': 'postgresql://postgres:3glKTpj2Qps4BiCiuCaw@containers-us-west-165.railway.app:7481/railway',
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': '3glKTpj2Qps4BiCiuCaw',
+        'HOST': 'containers-us-west-165.railway.app',
+        'PORT': 7481,
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
