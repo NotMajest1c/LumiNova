@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-^6@-j+t5tk$j-tme^mqgpm9la6th#s76!8-m%q$(#*3^e9hd5a
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1','https://lumi-nova-nsia.vercel.app']
 
 
 # Application definition
@@ -71,6 +71,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'LumiNova.wsgi.application'
+
 
 
 # Database
